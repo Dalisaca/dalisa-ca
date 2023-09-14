@@ -1,0 +1,10 @@
+{
+  "name": "Dalisa-ca Search for Job",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Extension to Search for Jobs easily",
+  "browser_action": {
+    "default_icon": "./src/logo-d.png",
+    "default_popup": "index.html"
+  }
+}

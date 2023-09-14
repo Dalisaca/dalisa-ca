@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Dawning+of+a+New+Day&family=Montserrat&family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Poppins:ital,wght@1,200&display=swap');
+
+* {
+  margin: 0;
+}
+.addBlock {
+  margin: 1rem;
+  background-color: white;
+  min-width: 10vw;
+  max-width: 25vw;
+  border-radius: 10px;
+}
+.mainBlock {
+  position: relative; /* Set to relative */
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5rem;
+  background-color: rgba(229, 229, 234, 0.5);
+  backdrop-filter: blur(30px);
+  color: #16354d;
+  min-width: 10vw;
+  max-width: 25vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+}
+
+.logoCircle {
+  position: absolute; /* Set to absolute */
+  top: -2rem;
+  left: -1.1rem;
+  background-color: #b7cb99;
+  box-shadow: 5px 2px #16354d;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  z-index: 1;
+
+  animation: moveCircle 5s ease-in-out infinite;
+}
+
+@keyframes moveCircle {
+  0%,
+  100% {
+    transform: translate(7px, 7px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+}
+@keyframes moveBotCircle {
+  0%,
+  100% {
+    transform: translate(-7px, -8px);
+  }
+  50% {
+    transform: translate(-4px, -5px);
+  }
+}
+
+.logoBotCircle {
+  position: absolute; /* Set to absolute */
+  bottom: -0.2rem;
+  right: -0.9rem;
+  box-shadow: 4px 2px #16354d;
+  background-color: #b7cb99;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  z-index: 1;
+
+  animation: moveBotCircle 8s ease-in-out infinite;
+}
+.logoOfExt {
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  font-family: 'Dawning of a New Day', cursive;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.blockLogoOfExt {
+  margin-bottom: 1rem;
+  margin-top: -2.7rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 2rem;
+
+  /* background-color: rgba(229, 229, 234, 0.9);
+  border-radius: 0 0 10px 10px; */
+}
+#compname,
+#posname {
+  outline: none;
+  border: none;
+  background-color: rgba(183, 203, 153, 0.2);
+  color: #16354d;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  max-width: 20vw;
+  min-width: 20vw;
+}
+@media only screen and (max-width: 720px) {
+  #compname,
+  #posname,
+  #desctext {
+    max-width: 20vw;
+    min-width: 10vw;
+  }
+  .formJob {
+    margin-top: 0.2rem !important;
+  }
+  .logoCircle {
+    position: absolute; /* Set to absolute */
+    top: -1rem;
+  }
+  .logoBotCircle {
+    bottom: -0.2rem;
+    right: -0.2rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .formJob {
+    margin-top: 0.2rem !important;
+  }
+}
+#locationDropdown {
+  outline: none;
+  border: none;
+  background-color: rgba(183, 203, 153, 0.2);
+  color: #16354d;
+  padding: 0.3rem;
+  width: 20.5vw;
+}
+#desctext {
+  outline: none;
+  border: none;
+  background-color: rgba(183, 203, 153, 0.2);
+  color: #16354d;
+  padding: 0.3rem;
+  max-height: 20vw;
+  overflow-y: auto;
+  max-width: 20vw;
+  min-width: 20vw;
+  min-height: 10vw;
+}
+.compname,
+.posname,
+.desctext,
+.location {
+  color: rgb(142, 158, 118);
+}
+.formJob {
+  margin-top: 2rem;
+}
+.inpSubmit {
+  border: none;
+  background-color: #16354d;
+  box-shadow: 4px 2px #b7cb99;
+  color: rgb(229, 229, 234);
+  width: 3.5rem;
+  height: 2rem;
+  border-radius: 10%;
+}
+.inpSubmit:hover {
+  background-color: #b7cb99;
+  box-shadow: 4px 2px #16354d;
+  color: #16354d;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.blockSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+/* .logoOfExt::after {
+  content: '';
+  position: absolute;
+  top: 60%; 
+  left: 0;
+  width: 100%;
+  height: 0.7rem; 
+  background-color: #6b99c3;
+  opacity: 70%;
+  z-index: -1;
+} */
