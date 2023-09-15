@@ -8,57 +8,81 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="addBlock">
-      <div class="mainBlock">
-        <div class="logoCircle"></div>
-        <div class="blockLogoOfExt">
-          <h2 class="logoOfExt">Dalisaca</h2>
+    <div
+      style="
+        width: 500px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0);
+        margin-bottom: 1.2rem;
+      "
+    >
+      <div id="buttonGroup">
+        <button id="addJobs" class="inpSubmit">Add Jobs</button>
+        <button id="showJobs" class="inpSubmit">Show Jobs</button>
+        <button id="settings" class="inpSubmit">Settings</button>
+      </div>
+
+      <div class="addBlock" id="appContent" style="display: none">
+        <div class="mainBlock">
+          <div class="logoCircle"></div>
+          <!-- <div class="blockLogoOfExt">
+            <h2 class="logoOfExt">Dalisaca</h2>
+          </div> -->
+
+          <form action="#" class="formJob">
+            <label for="compname" class="compname">Company Name</label><br />
+            <input
+              type="text"
+              id="compname"
+              name="compname"
+              placeholder="Company XYZ"
+            /><br />
+            <label for="posname" class="posname">Position</label><br />
+            <input
+              type="text"
+              id="posname"
+              name="posname"
+              placeholder="Worker"
+            /><br />
+            <label for="location" class="location">Location</label><br />
+            <select id="locationDropdown" id="location">
+              <option value="Other">Other</option>
+              <option value="REM/US">Remote US</option>
+              <option value="REM/CA">Remote Canada</option>
+              <option value="CA/NS">Canada, NS</option>
+              <option value="CA/BC">Canada, BC</option>
+              <option value="CA/QC">Canada, QC</option>
+              <option value="CA/ON">Canada, ON</option>
+              <option value="CA/ON">Canada, ON</option>
+            </select>
+            <br />
+            <br />
+            <label for="desctext" class="desctext">Position Description</label
+            ><br />
+            <textarea
+              name="desctext"
+              id="desctext"
+              cols="20"
+              rows="2"
+              placeholder="Company XYZ is a leading e-commerce platform dedicated to providing exceptional customer service to our clients. We pride ourselves on our commitment to delivering top-notch support and solutions to meet our customers' needs."
+            ></textarea
+            ><br />
+
+            <div class="blockSubmit">
+              <button
+                value="Save"
+                class="inpSubmit"
+                id="saveButton"
+                onclick="saveJob()"
+              >
+                Save
+              </button>
+
+              <ul id="dataList"></ul>
+            </div>
+          </form>
+          <div class="logoBotCircle"></div>
         </div>
-
-        <form action="/action_page.php" class="formJob">
-          <label for="compname" class="compname">Company Name</label><br />
-          <input
-            type="text"
-            id="compname"
-            name="compname"
-            placeholder="Company XYZ"
-          /><br />
-          <label for="posname" class="posname">Position</label><br />
-          <input
-            type="text"
-            id="posname"
-            name="posname"
-            placeholder="Worker"
-          /><br />
-          <label for="location" class="location">Location</label><br />
-          <select id="locationDropdown" id="location">
-            <option value="Other">Other</option>
-            <option value="REM/US">Remote US</option>
-            <option value="REM/CA">Remote Canada</option>
-            <option value="CA/NS">Canada, NS</option>
-            <option value="CA/BC">Canada, BC</option>
-            <option value="CA/QC">Canada, QC</option>
-            <option value="CA/ON">Canada, ON</option>
-            <option value="CA/ON">Canada, ON</option>
-          </select>
-          <br />
-          <br />
-          <label for="desctext" class="desctext">Position Description</label
-          ><br />
-          <textarea
-            name="desctext"
-            id="desctext"
-            cols="20"
-            rows="2"
-            placeholder="Company XYZ is a leading e-commerce platform dedicated to providing exceptional customer service to our clients. We pride ourselves on our commitment to delivering top-notch support and solutions to meet our customers' needs."
-          ></textarea
-          ><br />
-
-          <div class="blockSubmit">
-            <input type="submit" value="Save" class="inpSubmit" />
-          </div>
-        </form>
-        <div class="logoBotCircle"></div>
       </div>
     </div>
   </body>
